@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>Donate</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <style>
+        /* Center align the form container */
+        .form-container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 400px; /* Adjust the maximum width as needed */
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('#stuck_container').tmStickUp({});
+            $('.gallery .gall_item').touchTouch();
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+<header>
+    <section id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/logo.jpg" alt="Logo alt">
+                        </a>
+                    </h1>
+                    <div class="navigation">
+                        <nav>
+                            <ul class="sf-menu">
+                                <li><a href="index.html">home</a></li>
+                                <li class="current"><a href="index-1.html">donate</a></li>
+                                <li><a href="index-2.html">request</a></li>
+                                <li><a href="index-4.html">contacts</a></li>
+                                <li><a href="index-3.html">login</a></li>
+                            </ul>
+                        </nav>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<section class="content gallery pad1">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <h2 class="text-center">Donate Now</h2> <!-- Center align the heading -->
+                <div class="form-container text-center"> <!-- Center align the form container -->
+                    <form>
+                        <div class="form-group">
+                            <label for="orgName">Organization Name:</label>
+                            <input type="text" id="orgName" name="orgName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="foodType">Food Type:</label>
+                            <input type="text" id="foodType" name="foodType" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="headCount">Head Count:</label>
+                            <input type="number" id="headCount" name="headCount" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Contact Number:</label>
+                            <input type="tel" id="number" name="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <textarea id="address" name="address" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Donate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div class="socials">
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+                <div class="copyright">
+                    <span class="brand">Share Eat </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+                    class="copyright"><span class="brand">Share Eat </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">Share Eat</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
